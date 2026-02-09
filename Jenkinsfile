@@ -9,12 +9,12 @@ pipeline {
         }
         stage ('Build') {
             steps {
-                sh 'docker build -t pythonimage1201 .'
+                sh 'docker build -t pythonimage201 .'
             }
         }
         stage ('Run') {
             steps {
-                sh 'docker run -itd --name python001 -p 1160:5000 pythonimage1201'
+                sh 'docker run -itd --name python021 -p 1160:5000 pythonimage201'
             }
         }
     }
