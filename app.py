@@ -4,9 +4,9 @@ app = Flask(__name__)
 
 # Dummy product data (normally DB lo untadi)
 products = [
-    {"name": "Mobile Phone", "price": "₹15,000"},
-    {"name": "Laptop", "price": "₹111,000"},
-    {"name": "Charger", "price": "₹283,00"}
+    {"name": "Mobile Phone", "price": "Free"},
+    {"name": "Laptop", "price": "Free"},
+    {"name": "Charger", "price": "Free"}
 ]
 
 @app.route("/")
