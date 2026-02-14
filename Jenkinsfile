@@ -28,6 +28,7 @@ pipeline {
                     """
                 }
             }
+            
         }
         stage ('Push Image') {
             steps {
@@ -35,11 +36,13 @@ pipeline {
                 sh "docker tag ${FULL_IMAGE} ${IMAGE_NAME}:latest"
                 sh "docker push ${IMAGE_NAME}:latest"
             }
+
         }
         stage ('deploy'){
             steps {
                 sh 'docker rm -f python02121 || true'
                 sh 'docker run -itd --name python02121 -p 1170:5000 ${IMAGE_NAME}:latest'
+
             }
         }
     }
