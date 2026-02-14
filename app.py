@@ -4,7 +4,7 @@ app = Flask(__name__)
 
 # Dummy product data (normally DB lo untadi)
 products = [
-    {"name": "Mobile Phone", "price": "Free"},
+    {"name": "Mobile Phone", "price": "Buy one get one free"},
     {"name": "Laptop", "price": "Free"},
     {"name": "Charger", "price": "Free"}
 ]
