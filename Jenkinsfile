@@ -14,6 +14,7 @@ pipeline {
         }
         stage ('Run') {
             steps {
+                sh 'docker rm -f python02121 || true'
                 sh 'docker run -itd --name python02121 -p 1170:5000 pythonimagetest1'
             }
         }
