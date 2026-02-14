@@ -6,7 +6,7 @@ app = Flask(__name__)
 products = [
     {"name": "Mobile Phone", "price": "Buy one get one free"},
     {"name": "Laptop", "price": "Free"},
-    {"name": "Charger", "price": "Free"}
+    {"name": "Charger", "price": "Free"},
     {"name": "TAB", "price": "Free"}
 ]
 
