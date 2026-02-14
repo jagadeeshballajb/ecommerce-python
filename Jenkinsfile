@@ -41,7 +41,7 @@ pipeline {
         stage ('deploy'){
             steps {
                 sh 'docker rm -f python02121 || true'
-                sh 'docker run -itd --name python02121 -p 1170:5000 ${IMAGE_NAME}:latest'
+                sh 'docker run -itd --name python02121 -p 5000:5000 ${IMAGE_NAME}:latest'
 
             }
         }
