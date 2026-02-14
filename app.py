@@ -7,7 +7,7 @@ products = [
     {"name": "Mobile Phone", "price": "Buy one get one free"},
     {"name": "Laptop", "price": "Free"},
     {"name": "Charger", "price": "Free"}
-    # {"name": "TAB", "price": "Free"}
+    {"name": "TAB", "price": "Free"}
 ]
 
 @app.route("/")
