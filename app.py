@@ -6,7 +6,7 @@ app = Flask(__name__)
 products = [
     {"name": "Mobile Phone", "price": "₹15,000"},
     {"name": "Laptop", "price": "₹111,000"},
-    {"name": "Headphones", "price": "₹289,00"}
+    {"name": "Headphones", "price": "₹283,00"}
 ]
 
 @app.route("/")
