@@ -43,7 +43,7 @@ pipeline {
             steps {
                 sh 'docker rm -f python02121 || true'
                 sh 'docker run -itd --name python02121 -p 5000:5000 ${IMAGE_NAME}:latest'
-                sh 'echo env.BUILD_NUMBER'
+                sh "echo ${env.BUILD_NUMBER}"
 
             }
         }
